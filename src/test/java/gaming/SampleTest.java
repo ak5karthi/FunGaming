@@ -51,7 +51,7 @@ public class SampleTest {
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		List<WebElement> categories = driver.findElements(By.xpath("//div[@class='flex-shrink-0 flex items-center']"));
 		System.out.println("Number of categories " + categories.size());
-		for (int k =3;k< categories.size() ;k++) {
+		for (int k =1;k< categories.size() ;k++) {
 			try {
 				categories = driver.findElements(By.xpath("//div[@class='flex-shrink-0 flex items-center']"));
 				WebElement category = categories.get(k);
@@ -246,7 +246,7 @@ public class SampleTest {
 							List<WebElement> GameButtons = driver.findElements(By.xpath("//button[text()='Play']"));
 							List<WebElement> GameNames = driver
 									.findElements(By.xpath("//div[@class='game_container_game_btn_name']"));
-							for (int i = 0; i < 3; i++) {
+							for (int i = 0; i < 1; i++) {
 								for (;;) {
 									try {
 										GameNames = driver
